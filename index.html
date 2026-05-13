@@ -1,20 +1,34 @@
-<!DOCTYPE html>
+y<!DOCTYPE html>
 <html>
 <head>
     <title>pumpkin</title>
 </head>
 <body>
-  <h1>hello world! im alisha :)</h1>
+  <h1>hello world! im alisha :D</h1>
+    <div class="something">
   <div class="me">
     <img src="assets/ally.jpg" alt="alisha">
   </div>
- <div class="myQuote">the world celebrates perfection, but the most human things have always been incomplete</div>
+ <div class="myQuote">
+     <p>
+         <span>world celebrates perfection, but the most human things have always been incomplete :)</span>
+     </p>
+ </div>
+    </div>
 
     <style>
         body {
             text-align: center;
             font-family: Arial, sans-serif;
             background-color:black;
+        }
+        .something {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 20px;
+            max-width: 900px;
+            margin: auto;
         }
 
         .me img {
@@ -31,6 +45,12 @@
         }
         h1 {
             color: white;
+        }
+        @media (max-width: 768px) {
+            .something {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
         }
     </style>
 </body>
