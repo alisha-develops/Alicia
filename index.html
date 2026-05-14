@@ -23,6 +23,25 @@
             font-family: Arial, sans-serif;
             background-color:black;
             margin: 0;
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            ransition: all 0.6s ease;
+        }
+        @keyframes blobMorph {
+            0% {
+                border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            }
+            25% {
+                border-radius: 30% 70% 70% 30% / 40% 60% 40% 60%;
+            }
+    50% {
+        border-radius: 50% 50% 20% 80% / 25% 80% 20% 75%;
+    }
+    75% {
+        border-radius: 70% 30% 60% 40% / 60% 40% 30% 70%;
+    }
+    100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
         }
         .something {
             display: grid;
