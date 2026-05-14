@@ -25,7 +25,8 @@
             margin: 0;
             border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
             border: 2px dotted yellow;
-            ransition: all 0.6s ease;
+            transition: all 0.6s ease;
+            animation: blobMove 8s ease-in-out infinite;
         }
         @keyframes blobMorph {
             0% {
@@ -71,8 +72,9 @@
         }
         a {
             color:yellow;
-            border: 2px dotted white;
+            /* border: 2px dotted white; */
             align-items: left;
+            font-size: 1.2rem;
         }
         @media (max-width: 768px) {
             .something {
